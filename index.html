@@ -1,0 +1,31 @@
+<!-- index.html with only a video -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Website</title>
+</head>
+<body>
+    <script>
+        const password = prompt("Enter the password:");
+
+        if (password !== "you") {
+            alert("Incorrect password. Access denied.");
+            window.location.href = "https://www.google.com"; // Redirect to another site (optional)
+        }
+    </script>
+
+    <h1>Welcome to the private website!</h1>
+
+    <!-- Video -->
+    <h2>Video</h2>
+    <video width="640" height="360" controls>
+        <source src="media/git.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Your private content goes here -->
+
+</body>
+</html>
